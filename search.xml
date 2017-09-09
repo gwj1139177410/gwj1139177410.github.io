@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to 葛伟杰’Blog——————————————————— 2017.9.2 Test hexo搭建的静态页面，网站资料托管在Github上 从本周起开始搬运原博客地址：http://gwj1314.azurewebsites.net/ 2017.9.3因为时间原因只占了个坑尚未完成搭建美化及部署还待更新。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[OI调试技巧]]></title>
+    <url>%2FOI%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7%2F</url>
+    <content type="text"></content>
+  </entry>
+</search>
