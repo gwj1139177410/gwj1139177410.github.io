@@ -3,25 +3,24 @@
   <entry>
     <title><![CDATA[hello-world]]></title>
     <url>%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to 葛伟杰’Blog 博客说明 2017.9.2 Test hexo搭建的静态页面，网站资料托管在Github上 从本周起开始搬运 原博客地址：qq空间, CSDN, 博客园, 唯 2017.9.3因为时间原因只占了个坑尚未完成搭建美化及部署还待更新。 2017.9.10 看完了官方的说明文档，修改了博客界面搬运了以前的部分文章，不过考虑到实际情况旧版的时间和内容都不大可靠，甚至可以说，没法看，目前只用来凑数 2017.12.4 这段时间发生好多事情，初赛翻车，月考爆炸，OI卡瓶颈等等。 总之，今天开始恢复更新。 hexo参考文档 123456789101112131415161718https://hexo.io/zh-cn/docs/http://blog.csdn.net/lemonxq/article/details/72676005http://www.cnblogs.com/visugar/p/6821777.htmlhttp://www.jianshu.com/p/e99ed60390a8https://github.com/gwj1139177410/gwj1139177410.github.iohttp://www.jianshu.com/p/cea41e5c9b2ahttp://hzwer.com/7560.htmlhttps://www.fyvps.com/jp.htmlhttp://theme-next.iissnan.com/http://theme-next.iissnan.com/getting-started.htmlhttp://iissnan.com/progit/https://github.com/iissnan/hexo-theme-nexthttp://fontawesome.io/https://segmentfault.com/a/1190000009544924http://www.arao.me/2015/hexo-next-theme-optimize-seo/http://blog.csdn.net/mmmwhy/article/details/62887520http://mp3.flash127.com/sou/%E5%89%8D%E5%89%8D.htmlhttps://portal.qiniu.com/bucket/gwj1314/resource]]></content>
+    <content type="text"><![CDATA[Welcome to 葛伟杰’Blog 博客说明 2017.9.2 Test hexo搭建的静态页面，网站资料托管在Github上 从本周起开始搬运 原博客地址：qq空间, CSDN, 博客园, 唯 2017.9.3因为时间原因只占了个坑尚未完成搭建美化及部署还待更新。 2017.9.10 看完了官方的说明文档，修改了博客界面搬运了以前的部分文章，不过考虑到实际情况旧版的时间和内容都不大可靠，甚至可以说，没法看，目前只用来凑数 2017.12.4 这段时间发生好多事情，初赛翻车，月考爆炸，OI卡瓶颈等等。 总之，今天开始恢复更新。]]></content>
       <categories>
-        <category>Geek</category>
+        <category>Diary</category>
       </categories>
       <tags>
-        <tag>VPS</tag>
         <tag>Blog</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[g++命令]]></title>
-    <url>%2Ftools%2Fg%2B%2B%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[g++编译下面以Test.cpp为例：12345命令： g++ Test.cpp功能：生成默认为a.exe的文件，这个过程包含了编译和链接。-o命令是输出的意思，这样就输出了Test.exe。你要输出Test.exe的话可以用：g++ -o Test.exe。 1.预处理,生成.i的文件[预处理器cpp]12命令：g++ -E Test.cpp &gt; Test.i 功能：这一步主要做了这些事情：宏的替换，还有注释的消除，还有找到相关的库文件。用编辑器打开Test.i会发现有很多很多代码，你只需要看最后部分就会发现，预处理做了宏的替换，还有注释的消除，可以理解为无关代码的清除。 2.将预处理后的文件不转换成汇编语言,生成文件.s[编译器egcs]命令:g++ -S Test.cpp1功能:会生成Test.s文件，.s文件表示是汇编文件，用编辑器打开就都是汇编指令。 3.有汇编变为目标代码(机器代码)生成.o的文件[汇编器as]12命令:g++ -c Test.cpp 功能：.o是GCC生成的目标文件，除非你是做编译器和连接器调试开发的，否则打开这种.o没有任何意义。二进制机器码一般人也读不了。 4.连接目标代码,生成可执行程序[链接器ld]12命令：g++ Test.o -L F:\vs2008\VC\include\iostream功能：将.o文件与所需的库文件链接整合形成.exe文件，这就是可执行文件。-L 表示链接，这里我后面写的是绝对路径，相对各人电脑不同 参考文献 g++编译]]></content>
+    <title><![CDATA[mac_gcc_files]]></title>
+    <url>%2Ftools%2Fmac_gcc_files%2F</url>
+    <content type="text"><![CDATA[mac_gcc_files1. 在Terminal键入g++提示自动安装gcc：Terminal键入g++，来自x-code的gcc工具clang，默认版本4.2.1 Command Line Tools：Terminal键入xcode-select --install或者官网下载 2.通过homebreak安装1) 先安装Homebrew 2) brew install gcc 3) 如果要安装指定版本的gcc 1234567brew updatebrew reinstall gcc5 --without-multilibbrew install homebrew/versions/gcc5 vim ~/.bash_profile填加如下代码export PATH="/usr/local/Cellar/gcc/6.3.0_1/bin:$PATH" 3. MacPorts! 多版本间切换1) 先安装MacPorts 2) 再更新MacPorts： sudo port selfupdate 3) 网络查找gcc库： port search gcc 4) 安装gcc：sudo -i #获取管理员权限 和 port install gcc48 5) 查看安装的版本： port select --list gcc 6) 切换gcc版本： sudo port select --set gcc mp-gcc48 7) 清空bash缓存：hash -r 4. 来自手动的恐惧1) HPC on Mac OS X下载你所需要的gcc版本 2) 下载完成后，通过terminal进入下载目录，即gcc-4.8-bin.tar.gz所在的目录。输入命令：gunzip gcc-4.8-bin.tar.gz (目的是解压，雾) 3) 继续在terminal中输入命令：sudo tar -xvf gcc-4.8-bin.tar 4) 添加gcc路径：重新新建一个terminal，输入touch ～/.bash_profile 5) 新建一个bash_profile文件，使用vi或者其他编辑器写入如下代码： export PATH=&quot;/Users/gwj1139177410/Gcc/usr/local/bin:$PATH&quot; 路径有所修改，写完在Terminal键入source ～／.bash_profile使他生效 6) 查看是否生效 echo $PATH 5. Atom中的g++环境配置 需要MinGW或者g++环境 1) 在Atom内安装linter-gcc与linter两个插件。 2) 在已安装的包中选择linter-gcc- setting，将路径改为gcc或g++并且勾选“Lint on-the-fly”(表示在书写的同时编译，不用每次保存) 3) 安装gcc-make-run，安装完成后，按F6即可编译并运行程序 最后再安利几个atom插件：Activate Power Mode，minimap，simplified-chinese-menu等等]]></content>
       <categories>
         <category>Geek</category>
       </categories>
       <tags>
-        <tag>编译器</tag>
         <tag>g++</tag>
+        <tag>编译器</tag>
         <tag>开发环境</tag>
       </tags>
   </entry>
@@ -38,15 +37,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[mac_gcc_files]]></title>
-    <url>%2Ftools%2Fmac_gcc_files%2F</url>
-    <content type="text"><![CDATA[mac_gcc_files1. 在Terminal键入g++提示自动安装gcc：Terminal键入g++，来自x-code的gcc工具clang，默认版本4.2.1 Command Line Tools：Terminal键入xcode-select --install或者官网下载 2.通过homebreak安装1) 先安装Homebrew 2) brew install gcc 3) 如果要安装指定版本的gcc 1234567brew updatebrew reinstall gcc5 --without-multilibbrew install homebrew/versions/gcc5 vim ~/.bash_profile填加如下代码export PATH="/usr/local/Cellar/gcc/6.3.0_1/bin:$PATH" 3. MacPorts! 多版本间切换1) 先安装MacPorts 2) 再更新MacPorts： sudo port selfupdate 3) 网络查找gcc库： port search gcc 4) 安装gcc：sudo -i #获取管理员权限 和 port install gcc48 5) 查看安装的版本： port select --list gcc 6) 切换gcc版本： sudo port select --set gcc mp-gcc48 7) 清空bash缓存：hash -r 4. 来自手动的恐惧1) HPC on Mac OS X下载你所需要的gcc版本 2) 下载完成后，通过terminal进入下载目录，即gcc-4.8-bin.tar.gz所在的目录。输入命令：gunzip gcc-4.8-bin.tar.gz (目的是解压，雾) 3) 继续在terminal中输入命令：sudo tar -xvf gcc-4.8-bin.tar 4) 添加gcc路径：重新新建一个terminal，输入touch ～/.bash_profile 5) 新建一个bash_profile文件，使用vi或者其他编辑器写入如下代码： export PATH=&quot;/Users/gwj1139177410/Gcc/usr/local/bin:$PATH&quot; 路径有所修改，写完在Terminal键入source ～／.bash_profile使他生效 6) 查看是否生效 echo $PATH 5. Atom中的g++环境配置 需要MinGW或者g++环境 1) 在Atom内安装linter-gcc与linter两个插件。 2) 在已安装的包中选择linter-gcc- setting，将路径改为gcc或g++并且勾选“Lint on-the-fly”(表示在书写的同时编译，不用每次保存) 3) 安装gcc-make-run，安装完成后，按F6即可编译并运行程序 最后再安利几个atom插件：Activate Power Mode，minimap，simplified-chinese-menu等等]]></content>
+    <title><![CDATA[g++命令]]></title>
+    <url>%2Ftools%2Fg%2B%2B%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[g++编译下面以Test.cpp为例：12345命令： g++ Test.cpp功能：生成默认为a.exe的文件，这个过程包含了编译和链接。-o命令是输出的意思，这样就输出了Test.exe。你要输出Test.exe的话可以用：g++ -o Test.exe。 1.预处理,生成.i的文件[预处理器cpp]12命令：g++ -E Test.cpp &gt; Test.i 功能：这一步主要做了这些事情：宏的替换，还有注释的消除，还有找到相关的库文件。用编辑器打开Test.i会发现有很多很多代码，你只需要看最后部分就会发现，预处理做了宏的替换，还有注释的消除，可以理解为无关代码的清除。 2.将预处理后的文件不转换成汇编语言,生成文件.s[编译器egcs]命令:g++ -S Test.cpp1功能:会生成Test.s文件，.s文件表示是汇编文件，用编辑器打开就都是汇编指令。 3.有汇编变为目标代码(机器代码)生成.o的文件[汇编器as]12命令:g++ -c Test.cpp 功能：.o是GCC生成的目标文件，除非你是做编译器和连接器调试开发的，否则打开这种.o没有任何意义。二进制机器码一般人也读不了。 4.连接目标代码,生成可执行程序[链接器ld]12命令：g++ Test.o -L F:\vs2008\VC\include\iostream功能：将.o文件与所需的库文件链接整合形成.exe文件，这就是可执行文件。-L 表示链接，这里我后面写的是绝对路径，相对各人电脑不同 参考文献 g++编译]]></content>
       <categories>
         <category>Geek</category>
       </categories>
       <tags>
-        <tag>编译器</tag>
         <tag>g++</tag>
+        <tag>编译器</tag>
         <tag>开发环境</tag>
       </tags>
   </entry>
