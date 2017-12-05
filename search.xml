@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Notepad]]></title>
     <url>%2Ftools%2FNotepad%2F</url>
-    <content type="text"><![CDATA[Word1学生端：ntsd /pn studentmain.exe 参考资料 极域九法]]></content>
+    <content type="text"><![CDATA[Word1学生端：ntsd /pn studentmain.exe Word212345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182//未调完/* 1.反馈* 请不要在自修课上说这种事情, 先不说其本身性质不过是推销罢了,* 但你们这样浪费别人几乎完整的一节课时间做这种事情本来就是不合适的* 本来就最后一节课了, 还剩十分钟, 有心学习的人能有几个。* 完全可以课余且几分钟解决的事情，*//* 2.建模* 题面：50本书，50个人，每本书有一个价格，统计每种书的本书，每个人的钱数。* 输入：每个人(用号次表示), 及其需要购买的书(以0结束), 输入-1以结束统计并保存数据* 输出：数据存储用txt统一处理, 所以请不要删除文件。*//* 3.说明* 我是mac环境下写的，所以用cpp而不是bat,vb之类,。* 因为本题中侧重的是数据处理而非维护，且过程简单直接，所以是非工程式的类似于脚本的方式实现。*/#include&lt;cstdio&gt;#include&lt;cstring&gt;#include&lt;iostream&gt;#include&lt;string&gt;using namespace std;const int maxn = 55;int n,m,a[maxn][maxn];//a[i][j],i号是否买了第j本书int main()&#123; /*预处理 cin&gt;&gt;n&gt;&gt;m; freopen("input.txt","w",stdout); cout&lt;&lt;n&lt;&lt;" "&lt;&lt;m&lt;&lt;"\n"; for(int i = 1; i &lt;= n; i++)&#123; for(int j = 1; j &lt;= m; j++) cout&lt;&lt;0&lt;&lt;" "; cout&lt;&lt;endl; &#125; return 0; */ cout&lt;&lt;"start\n"; freopen("input.txt","r",stdin); cin&gt;&gt;n&gt;&gt;m; //n个人, m本书 for(int i = 1; i &lt;= n; i++) for(int j = 1; j &lt;= m; j++) cin&gt;&gt;a[i][j]; freopen("input.txt","w",stdout); int ok = 1; while(1)&#123; int id; cin&gt;&gt;id;//号次 int tmp[maxn]; memset(tmp,0,sizeof(tmp));//临时 int t=-1; while(1)&#123; cin&gt;&gt;t; cout&lt;&lt;t&lt;&lt;"\n"; if(t == -1)break;//这个人结束，进入下一个人。 if(t == -2)break;//输入错误，本次统计不算。 if(t == -3)break;//保存本个人并离开关闭程序。 tmp[t]++; &#125; cout&lt;&lt;"asdf"; if(t == -2)continue; for(int i = 1; i &lt;= m; i++) if(tmp[i])a[id][i]++; if(t == -1)continue; break; &#125; cout&lt;&lt;n&lt;&lt;" "&lt;&lt;m&lt;&lt;"\n"; for(int i = 1; i &lt;= n; i++)&#123; for(int j = 1; j &lt;= m; j++) cout&lt;&lt;a[i][j]&lt;&lt;" "; cout&lt;&lt;"\n"; &#125; cout&lt;&lt;"\n统计每本书有多少人买了\n"; for(int i = 1; i &lt;= m; i++)cout&lt;&lt;i&lt;&lt;" "; cout&lt;&lt;"\n"; for(int i = 1; i &lt;= m; i++)&#123; int t = 0; for(int j = 1; j &lt;= n; j++) if(a[j][i])t++; cout&lt;&lt;t&lt;&lt;" "; &#125; cout&lt;&lt;" "; return 0;&#125; 参考资料 极域九法]]></content>
   </entry>
   <entry>
     <title><![CDATA[「bzoj1001」A+B Problem]]></title>
@@ -80,19 +80,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[g++命令]]></title>
-    <url>%2Ftools%2Fg%2B%2B%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[g++编译下面以Test.cpp为例：12345命令： g++ Test.cpp功能：生成默认为a.exe的文件，这个过程包含了编译和链接。-o命令是输出的意思，这样就输出了Test.exe。你要输出Test.exe的话可以用：g++ -o Test.exe。 1.预处理,生成.i的文件[预处理器cpp]12命令：g++ -E Test.cpp &gt; Test.i 功能：这一步主要做了这些事情：宏的替换，还有注释的消除，还有找到相关的库文件。用编辑器打开Test.i会发现有很多很多代码，你只需要看最后部分就会发现，预处理做了宏的替换，还有注释的消除，可以理解为无关代码的清除。 2.将预处理后的文件不转换成汇编语言,生成文件.s[编译器egcs]命令:g++ -S Test.cpp1功能:会生成Test.s文件，.s文件表示是汇编文件，用编辑器打开就都是汇编指令。 3.有汇编变为目标代码(机器代码)生成.o的文件[汇编器as]12命令:g++ -c Test.cpp 功能：.o是GCC生成的目标文件，除非你是做编译器和连接器调试开发的，否则打开这种.o没有任何意义。二进制机器码一般人也读不了。 4.连接目标代码,生成可执行程序[链接器ld]12命令：g++ Test.o -L F:\vs2008\VC\include\iostream功能：将.o文件与所需的库文件链接整合形成.exe文件，这就是可执行文件。-L 表示链接，这里我后面写的是绝对路径，相对各人电脑不同 参考文献 g++编译]]></content>
-      <categories>
-        <category>Geek</category>
-      </categories>
-      <tags>
-        <tag>编译器</tag>
-        <tag>g++</tag>
-        <tag>开发环境</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[mac_gcc_files]]></title>
     <url>%2Ftools%2Fmac_gcc_files%2F</url>
     <content type="text"><![CDATA[mac_gcc_files1. 在Terminal键入g++提示自动安装gcc：Terminal键入g++，来自x-code的gcc工具clang，默认版本4.2.1 Command Line Tools：Terminal键入xcode-select --install或者官网下载 2.通过homebreak安装1) 先安装Homebrew 2) brew install gcc 3) 如果要安装指定版本的gcc 1234567brew updatebrew reinstall gcc5 --without-multilibbrew install homebrew/versions/gcc5 vim ~/.bash_profile填加如下代码export PATH="/usr/local/Cellar/gcc/6.3.0_1/bin:$PATH" 3. MacPorts! 多版本间切换1) 先安装MacPorts 2) 再更新MacPorts： sudo port selfupdate 3) 网络查找gcc库： port search gcc 4) 安装gcc：sudo -i #获取管理员权限 和 port install gcc48 5) 查看安装的版本： port select --list gcc 6) 切换gcc版本： sudo port select --set gcc mp-gcc48 7) 清空bash缓存：hash -r 4. 来自手动的恐惧1) HPC on Mac OS X下载你所需要的gcc版本 2) 下载完成后，通过terminal进入下载目录，即gcc-4.8-bin.tar.gz所在的目录。输入命令：gunzip gcc-4.8-bin.tar.gz (目的是解压，雾) 3) 继续在terminal中输入命令：sudo tar -xvf gcc-4.8-bin.tar 4) 添加gcc路径：重新新建一个terminal，输入touch ～/.bash_profile 5) 新建一个bash_profile文件，使用vi或者其他编辑器写入如下代码： export PATH=&quot;/Users/gwj1139177410/Gcc/usr/local/bin:$PATH&quot; 路径有所修改，写完在Terminal键入source ～／.bash_profile使他生效 6) 查看是否生效 echo $PATH 5. Atom中的g++环境配置 需要MinGW或者g++环境 1) 在Atom内安装linter-gcc与linter两个插件。 2) 在已安装的包中选择linter-gcc- setting，将路径改为gcc或g++并且勾选“Lint on-the-fly”(表示在书写的同时编译，不用每次保存) 3) 安装gcc-make-run，安装完成后，按F6即可编译并运行程序 最后再安利几个atom插件：Activate Power Mode，minimap，simplified-chinese-menu等等]]></content>
@@ -100,8 +87,21 @@
         <category>Geek</category>
       </categories>
       <tags>
-        <tag>编译器</tag>
         <tag>g++</tag>
+        <tag>编译器</tag>
+        <tag>开发环境</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[g++命令]]></title>
+    <url>%2Ftools%2Fg%2B%2B%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[g++编译下面以Test.cpp为例：12345命令： g++ Test.cpp功能：生成默认为a.exe的文件，这个过程包含了编译和链接。-o命令是输出的意思，这样就输出了Test.exe。你要输出Test.exe的话可以用：g++ -o Test.exe。 1.预处理,生成.i的文件[预处理器cpp]12命令：g++ -E Test.cpp &gt; Test.i 功能：这一步主要做了这些事情：宏的替换，还有注释的消除，还有找到相关的库文件。用编辑器打开Test.i会发现有很多很多代码，你只需要看最后部分就会发现，预处理做了宏的替换，还有注释的消除，可以理解为无关代码的清除。 2.将预处理后的文件不转换成汇编语言,生成文件.s[编译器egcs]命令:g++ -S Test.cpp1功能:会生成Test.s文件，.s文件表示是汇编文件，用编辑器打开就都是汇编指令。 3.有汇编变为目标代码(机器代码)生成.o的文件[汇编器as]12命令:g++ -c Test.cpp 功能：.o是GCC生成的目标文件，除非你是做编译器和连接器调试开发的，否则打开这种.o没有任何意义。二进制机器码一般人也读不了。 4.连接目标代码,生成可执行程序[链接器ld]12命令：g++ Test.o -L F:\vs2008\VC\include\iostream功能：将.o文件与所需的库文件链接整合形成.exe文件，这就是可执行文件。-L 表示链接，这里我后面写的是绝对路径，相对各人电脑不同 参考文献 g++编译]]></content>
+      <categories>
+        <category>Geek</category>
+      </categories>
+      <tags>
+        <tag>g++</tag>
+        <tag>编译器</tag>
         <tag>开发环境</tag>
       </tags>
   </entry>
