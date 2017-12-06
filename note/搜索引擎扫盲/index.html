@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="扫盲系列," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="搜索引擎扫盲 文本是为了更好的使用搜索引擎而写的。  据说没有搜索引擎可以一次抓取到全网16%以上的网页并排名。 0x01 使用Google找学术资料的化，真的用Google吧，不是信仰上说说的，在很多细节上，完全是百度不可以替代的。很多东西百度根本就搜不到，特别是用英文搜的时候，可能你翻个几十页还不如Google的前几页有价值。 0x02  搜索技巧1、过滤不想要的关键词 例如：我想搜索去掉李">
+<meta name="keywords" content="扫盲系列">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搜索引擎扫盲">
+<meta property="og:url" content="gwj1314.space/note/搜索引擎扫盲/index.html">
+<meta property="og:site_name" content="小哈里&#39;s Blog">
+<meta property="og:description" content="搜索引擎扫盲 文本是为了更好的使用搜索引擎而写的。  据说没有搜索引擎可以一次抓取到全网16%以上的网页并排名。 0x01 使用Google找学术资料的化，真的用Google吧，不是信仰上说说的，在很多细节上，完全是百度不可以替代的。很多东西百度根本就搜不到，特别是用英文搜的时候，可能你翻个几十页还不如Google的前几页有价值。 0x02  搜索技巧1、过滤不想要的关键词 例如：我想搜索去掉李">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-06T04:32:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="搜索引擎扫盲">
+<meta name="twitter:description" content="搜索引擎扫盲 文本是为了更好的使用搜索引擎而写的。  据说没有搜索引擎可以一次抓取到全网16%以上的网页并排名。 0x01 使用Google找学术资料的化，真的用Google吧，不是信仰上说说的，在很多细节上，完全是百度不可以替代的。很多东西百度根本就搜不到，特别是用英文搜的时候，可能你翻个几十页还不如Google的前几页有价值。 0x02  搜索技巧1、过滤不想要的关键词 例如：我想搜索去掉李">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="gwj1314.space/note/搜索引擎扫盲/"/>
+
+
+
+
+
+  <title>搜索引擎扫盲 | 小哈里's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小哈里's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">不念过去，不惧未来。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-friends">
+          <a href="/friends/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-group"></i> <br />
+            
+            友链
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="gwj1314.space/note/搜索引擎扫盲/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小哈里">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/qaq.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小哈里's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">搜索引擎扫盲</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-30T00:00:00+08:00">
+                2017-10-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/note/" itemprop="url" rel="index">
+                    <span itemprop="name">note</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="搜索引擎扫盲"><a href="#搜索引擎扫盲" class="headerlink" title="搜索引擎扫盲"></a>搜索引擎扫盲</h2><blockquote>
+<p>文本是为了更好的使用搜索引擎而写的。</p>
+</blockquote>
+<p>据说没有搜索引擎可以一次抓取到全网16%以上的网页并排名。</p>
+<h4 id="0x01-使用Google"><a href="#0x01-使用Google" class="headerlink" title="0x01 使用Google"></a>0x01 使用Google</h4><p>找学术资料的化，真的用Google吧，不是信仰上说说的，在很多细节上，完全是百度不可以替代的。很多东西百度根本就搜不到，特别是用英文搜的时候，可能你翻个几十页还不如Google的前几页有价值。</p>
+<h4 id="0x02-搜索技巧"><a href="#0x02-搜索技巧" class="headerlink" title="0x02  搜索技巧"></a>0x02  搜索技巧</h4><p><strong>1、过滤不想要的关键词</strong></p>
+<p>例如：我想搜索去掉<code>李云景</code>这个关键词的<code>成长技能宝</code></p>
+<p>搜索：<code>成长技能宝-李云景</code>（减号的意思是去掉）</p>
+<p><strong>2、并行精准搜索</strong></p>
+<p>如果你想同时两次关键词，但是这两个关键词不连贯，这时候你就可以用并行搜索，</p>
+<p>比如我要搜索两个关键词：<code>李云景</code>和<code>成长技能宝</code></p>
+<p>可以输入：<code>李云景|成长技能宝</code></p>
+<p><strong>3、精准搜索关键词</strong></p>
+<p>比如我要搜我自己的名字：李云景，但是由于我的名字“名气不够”，在搜索过程中可能被拆分为“李”和“云景”进行分别搜索，这时候我们可以在关键词打上引号进行精准的搜索</p>
+<p>如：关键词输入：<code>“知乎李云景”</code></p>
+<p><strong>4、在标题中限定进行精准搜索</strong></p>
+<p>我们想得到的搜索结果标题中包涵我们输入的关键词，这时候我们可以用<code>intitle:</code>进行限定</p>
+<p>比如，我要搜索标题中有<strong>干货</strong>的关键词</p>
+<p>输入关键词：<code>intitle：干货</code></p>
+<p><strong>5、精准搜索文档类资料</strong></p>
+<p>比如我想美容销售话术的word文档</p>
+<p>一般我们会直接输入关键词：<code>美容销售话术</code>，但是这样搜出来的却不是我们想要的文档资料。这时候我们可以在关键词后面输入<code>filetype:doc,</code></p>
+<p>示范：<code>美容销售话术filetype:doc</code></p>
+<p><strong>6、指定链接进行精准搜索</strong></p>
+<p>在网页链接中我们可以限定关键词进行搜索，只要在关键词前面加：<code>inurl:</code></p>
+<p>例如：我要精准搜索关键词：<code>learn python</code></p>
+<p>可以输入关键词：<code>inurl:learn python</code></p>
+<p><strong>7、精准搜索网站site</strong></p>
+<p>输入关键词前添加<code>site</code>能帮你对指定网站进行站内搜索</p>
+<p>比如我搜索关键词：<code>知乎</code>，搜索结果都是站内的内容</p>
+<p>可以输入关键字：<code>site:zhihu.com</code></p>
+<h4 id="0x03-搜索引擎技术-题外话"><a href="#0x03-搜索引擎技术-题外话" class="headerlink" title="0x03  搜索引擎技术(题外话)"></a>0x03  搜索引擎技术(题外话)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">很多答案是从使用上讲的，我加两个技术方面的。</div><div class="line">1. 搜索引擎需要对抓取到的结果进行管理。当索引结果越来越多时，保证存储和查询速度，保证数万台服务器内容一致的难度越来越高。Google于03至06年左右公布了三篇论文，描述了GFS、BigTable、MapReduce三种技术以解决这些问题。由于Google并没有公布算法细节，因此由雅虎牵头，在06年左右建立了开源项目Hadoop，目的是根据Google的三篇论文，实现一个大规模的管理计算系统。但直到08年，Hadoop同Google公布的一些关键指标仍有几倍的差距。百度曾经由王选院士的一个博士带领，想基于Google论文独立实现(金字塔计划)一个自己的系统，但开发难度过大项目夭折，最终也转向了Hadoop。如今，Amazon、Facebook、Yahoo包括百度都在大规模应用Hadoop，而Google已经从2010年开始迁移到新的三驾马车Caffeine、Pregel、Dremel上了。单就搜索技术而言，Google不是领先百度，而是领先全世界。</div><div class="line">2. 2009-2012年，Google公布了世界上第一个全球化的数据库系统Spanner，这套系统将分布在全球各地的数据中心连接到一起，利用原子钟和GPS，打破了地理间隔，实现了全球规模具有一致性和实时性的数据库。在Google之前，很多人认为这种系统不可能做出来，但Google做到了[1]。</div><div class="line">另外，除了搜索，Google在深度学习和机器人方面也是全球领先的，尤其是后者。尽管百度也有深度学习研究院，但在这两方面跟Google比起来完全是空白。</div><div class="line">事实上，让百度来和谷歌比是很不公平的，搜索只是Google的一个部门，但却是百度一整个公司。Google的竞争对手是Apple、Amazon、Facebook和Microsoft，百度的竞争对手是360、搜狗。Google没了搜索，还有Chrome、Android、Youtube，百度没了搜索，那就什么都没有了。</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/扫盲系列/" rel="tag"># 扫盲系列</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/note/快捷热键扫盲/" rel="next" title="快捷操作扫盲">
+                <i class="fa fa-chevron-left"></i> 快捷操作扫盲
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/codes/C++奥赛一本通刷题记录之递推/" rel="prev" title="C++奥赛一本通刷题记录(递推)">
+                C++奥赛一本通刷题记录(递推) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/qaq.png"
+               alt="小哈里" />
+          <p class="site-author-name" itemprop="name">小哈里</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">22</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/gwj1139177410" target="_blank" title="Github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      Github
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="xiaohali:2403668241" target="_blank" title="QQ">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      QQ
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/gwj1139177410/activities" target="_blank" title="zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      zhihu
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="gwj1139177410@gmail.com" target="_blank" title="E-mail">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      E-mail
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://gwj1314.space/hello-world/" title="Hello-World" target="_blank">Hello-World</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#搜索引擎扫盲"><span class="nav-number">1.</span> <span class="nav-text">搜索引擎扫盲</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#0x01-使用Google"><span class="nav-number">1.0.1.</span> <span class="nav-text">0x01 使用Google</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x02-搜索技巧"><span class="nav-number">1.0.2.</span> <span class="nav-text">0x02  搜索技巧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x03-搜索引擎技术-题外话"><span class="nav-number">1.0.3.</span> <span class="nav-text">0x03  搜索引擎技术(题外话)</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小哈里</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Gemini
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
