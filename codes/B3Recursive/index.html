@@ -98,11 +98,11 @@
 <meta name="keywords" content="一本通,openjudege">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++奥赛一本通刷题记录(递推)">
-<meta property="og:url" content="gwj1314.space/codes/C++奥赛一本通刷题记录之递推/index.html">
+<meta property="og:url" content="gwj1314.space/codes/B3Recursive/index.html">
 <meta property="og:site_name" content="小哈里&#39;s Blog">
 <meta property="og:description" content="C++奥赛一本通刷题记录(递推) 2017.11.8  By gwj1139177410   斐波那契数列 openjudge1760 123456789101112131415#include&amp;lt;iostream&amp;gt;using namespace std;const int maxn=1000010, mod=1000;int f[maxn];int main()&amp;#123;    f">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-06T04:33:40.000Z">
+<meta property="og:updated_time" content="2018-01-07T09:14:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++奥赛一本通刷题记录(递推)">
 <meta name="twitter:description" content="C++奥赛一本通刷题记录(递推) 2017.11.8  By gwj1139177410   斐波那契数列 openjudge1760 123456789101112131415#include&amp;lt;iostream&amp;gt;using namespace std;const int maxn=1000010, mod=1000;int f[maxn];int main()&amp;#123;    f">
@@ -134,7 +134,7 @@
 
 
 
-  <link rel="canonical" href="gwj1314.space/codes/C++奥赛一本通刷题记录之递推/"/>
+  <link rel="canonical" href="gwj1314.space/codes/B3Recursive/"/>
 
 
 
@@ -273,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="gwj1314.space/codes/C++奥赛一本通刷题记录之递推/">
+    <link itemprop="mainEntityOfPage" href="gwj1314.space/codes/B3Recursive/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小哈里">
@@ -393,8 +393,48 @@
 <li><p>踩方格  <a href="http://noi.openjudge.cn/ch0206/4982" target="_blank" rel="external">openjudge4982</a></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//l[i],r[i],u[i]分别表示最后一步向左向右向上走到第i格*</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">30</span>;</div><div class="line"><span class="keyword">int</span> l[maxn], r[maxn], u[maxn];</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> n;  <span class="built_in">cin</span>&gt;&gt;n;</div><div class="line">    l[<span class="number">1</span>] = r[<span class="number">1</span>] = u[<span class="number">1</span>] = <span class="number">1</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= n; i++)&#123;</div><div class="line">        l[i] = l[i<span class="number">-1</span>]+u[i<span class="number">-1</span>];</div><div class="line">        r[i] = r[i<span class="number">-1</span>]+u[i<span class="number">-1</span>];</div><div class="line">        u[i] = l[i<span class="number">-1</span>]+r[i<span class="number">-1</span>]+u[i<span class="number">-1</span>];</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;l[n]+r[n]+u[n]&lt;&lt;<span class="string">"\n"</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
-<li><p>山区建小学  <a href="http://noi.openjudge.cn/ch0206/7624/" target="_blank" rel="external">openjudge7624</a></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//f[i][j]表示1..i中建j个小学的最小距离和.(这里的j可以看成是最后一所学校管辖区的终点)</span></div><div class="line"><span class="comment">//f[i][j]=min(f[i][j],f[k][j-1]+s[k+1][i]),j-1&lt;=k&lt;i;</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">510</span>;</div><div class="line"><span class="keyword">int</span> a[maxn],dis[maxn][maxn],s[maxn][maxn],f[maxn][maxn];</div><div class="line"><span class="comment">//s[管辖区起点][管辖区终点]=这片辖区内建一个学校，区内村庄到学校的最小距离和</span></div><div class="line"><span class="comment">//一个结论:因为i..j中选一个点使所有点到这个点的总距离最小，这个点一定在中点位置（反证法，左移右移时）</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">dist</span><span class="params">(<span class="keyword">int</span> l, <span class="keyword">int</span> r)</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> m = (l+r)/<span class="number">2</span>, sum = <span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = l; i &lt;= r; i++)sum += dis[i][m];</div><div class="line">    <span class="keyword">return</span> sum;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> m, n;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;m&gt;&gt;n;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= m; i++)<span class="built_in">cin</span>&gt;&gt;a[i],a[i]+=a[i<span class="number">-1</span>];</div><div class="line">    <span class="comment">//初始化两两距离</span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)</div><div class="line">            dis[i][j] = i==j?<span class="number">0</span>:<span class="built_in">abs</span>(a[j]-a[i]);</div><div class="line">    <span class="comment">//计算一个管辖从i到j村庄的学校到这些村庄的距离和</span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)</div><div class="line">            s[i][j] = dist(i,j);</div><div class="line">    <span class="comment">//初始化</span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)</div><div class="line">            f[i][j] = i==j?<span class="number">0</span>:<span class="number">0xfffff</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)f[i][<span class="number">1</span>] = s[<span class="number">1</span>][i];<span class="comment">//只建一所学校</span></div><div class="line">    <span class="comment">//DP</span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= m; i++)<span class="comment">//村庄</span></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">2</span>; j &lt;= min(i,n); j++)<span class="comment">//学校</span></div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> k = j<span class="number">-1</span>; k &lt; i; k++)<span class="comment">//枚举已有的(最后一所)学校管辖的范围(终点)</span></div><div class="line">                <span class="keyword">if</span>(i!=j)f[i][j] = min(f[i][j],f[k][j<span class="number">-1</span>]+s[k+<span class="number">1</span>][i]);</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;f[m][n];</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li><p>山区建小学 <a href="http://noi.openjudge.cn/ch0206/7624/" target="_blank" rel="external">openjudge7624</a></p>
+<pre><code class="cpp"><span class="comment">//f[i][j]表示1..i中建j个小学的最小距离和.(这里的j可以看成是最后一所学校管辖区的终点)</span>
+<span class="comment">//f[i][j]=min(f[i][j],f[k][j-1]+s[k+1][i]),j-1&lt;=k&lt;i;</span>
+<span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span>
+<span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span>
+<span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span>
+<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
+<span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">510</span>;
+<span class="keyword">int</span> a[maxn],dis[maxn][maxn],s[maxn][maxn],f[maxn][maxn];
+<span class="comment">//s[管辖区起点][管辖区终点]=这片辖区内建一个学校，区内村庄到学校的最小距离和</span>
+<span class="comment">//一个结论:因为i..j中选一个点使所有点到这个点的总距离最小，这个点一定在中点位置（反证法，左移右移时）</span>
+<span class="function"><span class="keyword">int</span> <span class="title">dist</span><span class="params">(<span class="keyword">int</span> l, <span class="keyword">int</span> r)</span></span>{
+   <span class="keyword">int</span> m = (l+r)/<span class="number">2</span>, sum = <span class="number">0</span>;
+   <span class="keyword">for</span>(<span class="keyword">int</span> i = l; i &lt;= r; i++)sum += dis[i][m];
+   <span class="keyword">return</span> sum;
+}
+<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>{
+   <span class="keyword">int</span> m, n;
+   <span class="built_in">cin</span>&gt;&gt;m&gt;&gt;n;
+   <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= m; i++)<span class="built_in">cin</span>&gt;&gt;a[i],a[i]+=a[i<span class="number">-1</span>];
+   <span class="comment">//初始化两两距离</span>
+   <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)
+       <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)
+           dis[i][j] = i==j?<span class="number">0</span>:<span class="built_in">abs</span>(a[j]-a[i]);
+   <span class="comment">//计算一个管辖从i到j村庄的学校到这些村庄的距离和</span>
+   <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)
+       <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)
+           s[i][j] = dist(i,j);
+   <span class="comment">//初始化</span>
+   <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)
+       <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)
+           f[i][j] = i==j?<span class="number">0</span>:<span class="number">0xfffff</span>;
+   <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)f[i][<span class="number">1</span>] = s[<span class="number">1</span>][i];<span class="comment">//只建一所学校</span>
+   <span class="comment">//DP</span>
+   <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= m; i++)<span class="comment">//村庄</span>
+       <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">2</span>; j &lt;= min(i,n); j++)<span class="comment">//学校</span>
+           <span class="keyword">for</span>(<span class="keyword">int</span> k = j<span class="number">-1</span>; k &lt; i; k++)<span class="comment">//枚举已有的(最后一所)学校管辖的范围(终点)</span>
+               <span class="keyword">if</span>(i!=j)f[i][j] = min(f[i][j],f[k][j<span class="number">-1</span>]+s[k+<span class="number">1</span>][i]);
+   <span class="built_in">cout</span>&lt;&lt;f[m][n];
+   <span class="keyword">return</span> <span class="number">0</span>;
+}
+</code></pre>
 </li>
 </ol>
 
@@ -429,8 +469,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/note/搜索引擎扫盲/" rel="next" title="搜索引擎扫盲">
-                <i class="fa fa-chevron-left"></i> 搜索引擎扫盲
+              <a href="/note/从机器学习谈起/" rel="next" title="从机器学习谈起">
+                <i class="fa fa-chevron-left"></i> 从机器学习谈起
               </a>
             
           </div>
@@ -439,7 +479,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/codes/C++奥赛一本通刷题记录之递归/" rel="prev" title="C++奥赛一本通刷题记录(递归)">
+              <a href="/codes/B4Recursive/" rel="prev" title="C++奥赛一本通刷题记录(递归)">
                 C++奥赛一本通刷题记录(递归) <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -518,7 +558,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -540,7 +580,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-count">26</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -658,7 +698,7 @@
         <div class="copyright" >
   
   &copy;  2015 - 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

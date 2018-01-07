@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="小哈里&#39;s Blog">
 <meta property="og:description" content="线性代数 For LaTeX Test  0x01 行列式的计算 某行(列)加上或减去另一行(列)的几倍，行列式不变。 行(列)乘k，等于k乘此行列式。 互换两行(列)，行列式变号。  0x02 计算的题型和套路 只有两个数字, 对角线是一个: 套公式 $$ (x-a)^{n-1}[x+(n-1)a] $$  $$ x^{0}, x^{1}, x^{2} … x^{n-1} = (xn-x{n-">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-10T13:15:06.000Z">
+<meta property="og:updated_time" content="2017-12-14T11:44:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线性代数">
 <meta name="twitter:description" content="线性代数 For LaTeX Test  0x01 行列式的计算 某行(列)加上或减去另一行(列)的几倍，行列式不变。 行(列)乘k，等于k乘此行列式。 互换两行(列)，行列式变号。  0x02 计算的题型和套路 只有两个数字, 对角线是一个: 套公式 $$ (x-a)^{n-1}[x+(n-1)a] $$  $$ x^{0}, x^{1}, x^{2} … x^{n-1} = (xn-x{n-">
@@ -400,7 +400,43 @@
 </li>
 <li>矩阵取绝对值。矩阵变成行列式。。。以及$$ |\lambda A|=\lambda^n|A|$$</li>
 </ol>
-<h4 id="0x04-矩阵运算下"><a href="#0x04-矩阵运算下" class="headerlink" title="0x04 矩阵运算下"></a>0x04 矩阵运算下</h4>
+<h4 id="0x04-矩阵运算下"><a href="#0x04-矩阵运算下" class="headerlink" title="0x04 矩阵运算下"></a>0x04 矩阵运算下</h4><ol>
+<li>矩阵转置。先用行乘列+$$(AB)^T=B^TA^T$$ + $$|A^T=A|$$</li>
+<li>证明矩阵可逆。为方正(行列数相同)+|A|!=0(或者存在B使得AB=E或BA=E)</li>
+<li>求逆矩阵，把(A:E)变成(E:B),则B就是A的逆矩阵。</li>
+<li>利用$A*A^{-1}=E$来计算</li>
+<li>A的伴随矩阵$A^<em>A=|A|E$或$AA^</em>=|A|E$</li>
+<li>求矩阵的秩即R(A),进行行变换，使下行左端的0比上行多，直到下面全为0为止</li>
+<li>已知秩，求未知数：不管未知数先变成0。</li>
+</ol>
+<h4 id="0x05-向量组与线性空间"><a href="#0x05-向量组与线性空间" class="headerlink" title="0x05 向量组与线性空间"></a>0x05 向量组与线性空间</h4><ol>
+<li>某向量是否可由其他向量表示：$$A=(a_1,a_2,a_3), B=(a_1,a_2,a_3,b), if R(A)==R(B)ok,else not ok$$</li>
+<li>某向量组是否线性相关：若R(A)&lt;向量个数则线性相关，若R(A)=向量个数则无关。$A=(a_1,a_2,a_3,a_4)$。 存在一组可由其他向量表 示的。</li>
+<li>已知一组基底，求某一向量在此下的坐标。待定系数法设方程并带入。</li>
+<li>求行向量的极大无关组。先编号，然后求秩(若交换两行则编号也要交换)，最后取秩的个数个编号为答案。</li>
+</ol>
+<h4 id="0x06-解方程组"><a href="#0x06-解方程组" class="headerlink" title="0x06 解方程组"></a>0x06 解方程组</h4><ol>
+<li>判断方程组有无解</li>
+<li>解方程组</li>
+<li>求方程组通解，特解，基础解系。</li>
+<li>已知某方程组的特解，求某其次方程组的通解</li>
+<li>已知某方程组的特解，求某其非齐次方程组的通解</li>
+<li>集合中线性无关的解向量个数</li>
+</ol>
+<h4 id="0x07-方正对角化及应用"><a href="#0x07-方正对角化及应用" class="headerlink" title="0x07 方正对角化及应用"></a>0x07 方正对角化及应用</h4><ol>
+<li>规范正交化</li>
+<li>求矩阵特征值：满足$|A-\lambda E|=0$的$\lambda$即为特征值</li>
+<li>求矩阵特征向量：(A-$\lambda$E)x=0的通解</li>
+<li>方阵与对角线相似或$P^{-1}AP=A$：方阵向量个数等于方阵阶数</li>
+<li>求方阵的对角阵A和可逆变换矩阵P</li>
+<li>求方阵的复杂式子。</li>
+</ol>
+<h4 id="0x08-二次型"><a href="#0x08-二次型" class="headerlink" title="0x08 二次型"></a>0x08 二次型</h4><ol>
+<li>对应的系数矩阵，套公式</li>
+<li>化成标准型</li>
+<li>​</li>
+</ol>
+
       
     </div>
     
@@ -521,7 +557,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -543,7 +579,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-count">26</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -638,7 +674,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性代数"><span class="nav-number">1.</span> <span class="nav-text">线性代数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#0x01-行列式的计算"><span class="nav-number">1.1.</span> <span class="nav-text">0x01 行列式的计算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x02-计算的题型和套路"><span class="nav-number">1.2.</span> <span class="nav-text">0x02 计算的题型和套路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x03-矩阵运算上"><span class="nav-number">1.3.</span> <span class="nav-text">0x03 矩阵运算上</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x04-矩阵运算下"><span class="nav-number">1.4.</span> <span class="nav-text">0x04 矩阵运算下</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性代数"><span class="nav-number">1.</span> <span class="nav-text">线性代数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#0x01-行列式的计算"><span class="nav-number">1.1.</span> <span class="nav-text">0x01 行列式的计算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x02-计算的题型和套路"><span class="nav-number">1.2.</span> <span class="nav-text">0x02 计算的题型和套路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x03-矩阵运算上"><span class="nav-number">1.3.</span> <span class="nav-text">0x03 矩阵运算上</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x04-矩阵运算下"><span class="nav-number">1.4.</span> <span class="nav-text">0x04 矩阵运算下</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x05-向量组与线性空间"><span class="nav-number">1.5.</span> <span class="nav-text">0x05 向量组与线性空间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x06-解方程组"><span class="nav-number">1.6.</span> <span class="nav-text">0x06 解方程组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x07-方正对角化及应用"><span class="nav-number">1.7.</span> <span class="nav-text">0x07 方正对角化及应用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x08-二次型"><span class="nav-number">1.8.</span> <span class="nav-text">0x08 二次型</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -661,7 +697,7 @@
         <div class="copyright" >
   
   &copy;  2015 - 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
